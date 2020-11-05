@@ -1,0 +1,1 @@
+42.between?(10, 100) ? "42 is between 10 and 100" : "42 is not between 10 and 100"
