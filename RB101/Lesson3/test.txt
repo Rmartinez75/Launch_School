@@ -1,0 +1,6 @@
+being
+-test if each character can be converted into an integer
+-if yes and is equal to or greater than 0 move it to an array
+-and if their are consecutive characters that can be converted then treat them as one integer 
+-when finished going over all character add up the integers and return the sum
+end

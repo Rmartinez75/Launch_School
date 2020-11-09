@@ -1,0 +1,8 @@
+input: string
+output: array of substring/substrings
+rules: 
+    Explicit requirements:
+      -any amount of characters in string that are read the same forward and backward and can be many different combinations
+      -palindromes are case sensitive
+    Implicit requirements:
+      -if the the string is empty return an empty array 
