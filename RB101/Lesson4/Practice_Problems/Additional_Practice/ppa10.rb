@@ -6,11 +6,14 @@ munsters = {
   "Marilyn" => { "age" => 23, "gender" => "female"}
 }
 
-def mess_with_demographics(demo_hash)
-  demo_hash.values.each do |family_member|
-    family_member["age"] += 42
-    family_member["gender"] = "other"
+munsters.map do |k, v|
+  if v["age"] < 18
+    v["age_group"] = "kid"
+  elsif v["age"] > 17 && v["age"] < 65
+    v["age_group"] = "adult"
+  else
+    v["age"] = "senior"
   end
 end
+p munsters
 
-mess_with_demographics(munsters)
