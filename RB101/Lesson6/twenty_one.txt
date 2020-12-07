@@ -1,0 +1,32 @@
+Game of 21 - Object of game is to reach 21 without going over
+
+Their are 52 cards - range 2-10 with ace, jack, queen, king in 4 different suits:
+  spades, clubs, hearts, diamonds
+  each jack queen and king equal the number 10 and ace equals 1 or 11
+
+Deal - random deal
+  each card can only be used once
+  dealer and player each get 2 cards
+  dealer only shows 1 card
+  player goes first
+  when player hits, another card is dealt to them adding up all the numbers
+    if player goes over 21 player loses
+  when player stays, dealers turn
+    if dealer gets to 17 dealer stays dealer and player cards get compared
+    if dealer goes over 21 player wins
+
+
+Methods:
+
+-Prompt
+-Initial deal
+-Hit one card
+-Totals
+
+Steps:
+1. Welcome the player and ask if they would like to play
+2. If they say yes deal the inital cards showing players two cards and one dealer card.
+3. Ask if they would like to hit or stay:
+  If they stay show the total of their cards and move on to dealer
+  If they hit continue to deal them cards unit they stay or bust
+4. If no one busts show both totals and declare winner
