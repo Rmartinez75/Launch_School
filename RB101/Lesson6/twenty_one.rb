@@ -10,14 +10,14 @@ def line
 end
 
 prompt('Welocome to the game 21. Would you like to play?(y or n)')
-    play_answer = gets.chomp
+play_answer = gets.chomp
 
 line
 
 loop do
   loop do
     players_cards = []
-    computer_cards = []    
+    computer_cards = []
 
     def first_deal(arr)
       suit = []
@@ -34,8 +34,8 @@ loop do
       arr.each do |first_arr|
         first_arr.each do |second_arr|
           if second_arr[0] == 'King' ||
-            second_arr[0] == 'Queen' ||
-            second_arr[0] == 'Jack'
+             second_arr[0] == 'Queen' ||
+             second_arr[0] == 'Jack'
             second_arr[0] = 10
           elsif second_arr[0] == "Ace"
             if card_hold.sum < 11
@@ -56,8 +56,6 @@ loop do
       card_hold << SUITS.sample
       arr[0] << card_hold
     end
-
-    
 
     if play_answer == 'y' || play_answer == 'Y'
       first_deal(players_cards)
@@ -100,11 +98,11 @@ loop do
 
       prompt("#{players_cards[0][-1][0]} of #{players_cards[0][-1][1]}")
       prompt("Totaling: #{add_cards(players_cards)}")
-      
+
       if add_cards(players_cards) > 21
         prompt("Sorry. Its a bust! Dealer wins")
         break
-      end 
+      end
     end
 
     line
